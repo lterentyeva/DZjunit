@@ -1,13 +1,11 @@
 package ru.netology.service;
 
-import org.testng.Assert;
+import org.junit.Assert;
 
-import static org.testng.Assert.*;
-import static org.testng.annotations.Test.*;
 
 public class CashbackHackServiceTest {
 
-    @org.testng.annotations.Test
+    @org.junit.Test
 
     public void shouldCountIfUnderBoundary() {
 
@@ -19,7 +17,7 @@ public class CashbackHackServiceTest {
         Assert.assertEquals(actual, expected);
     }
 
-    @org.testng.annotations.Test
+    @org.junit.Test
 
     public void shouldCountIfOverBoundary() {
 
@@ -31,7 +29,7 @@ public class CashbackHackServiceTest {
         Assert.assertEquals(actual, expected);
     }
 
-    @org.testng.annotations.Test
+    @org.junit.Test
 
     public void shouldCountByBoundary() {
 
